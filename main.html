@@ -1,35 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Footer Design</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
 
-  <body>
-    <footer>
-      <div class="content">
-        <div class="top">
-          <div class="logo-details">
-            <span class="logo_name">company</span>
-          </div>
-          <div class="media-icons">
-            <!-- your code here -->
-          </div>
-        </div>
-        <div class="link-boxes">
-          <!-- your code here -->
-        </div>
+    footer {
+      background-color: #222;
+      color: #fff;
+      padding: 40px 20px;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer-section {
+      flex: 1 1 200px;
+      margin: 10px;
+    }
+
+    .footer-section h3 {
+      margin-bottom: 15px;
+      font-size: 18px;
+      border-bottom: 2px solid #555;
+      padding-bottom: 5px;
+    }
+
+    .footer-section a {
+      display: block;
+      color: #ccc;
+      text-decoration: none;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .footer-section a:hover {
+      color: #fff;
+    }
+
+    .contact {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    /* Social Icons */
+    .social {
+      margin-top: 15px;
+    }
+
+    .media-icons {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      margin-right: 8px;
+      background-color: #555;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 35px;
+      color: white;
+      font-size: 14px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<footer>
+  <div class="footer-container">
+
+    <!-- Home -->
+    <div class="footer-section">
+      <h3>Home</h3>
+      <a href="#">Homepage</a>
+    </div>
+
+    <!-- About -->
+    <div class="footer-section">
+      <h3>About</h3>
+      <a href="#">About Us</a>
+      <a href="#">Our Team</a>
+    </div>
+
+    <!-- Links -->
+    <div class="footer-section">
+      <h3>Links</h3>
+      <a href="#">Blog</a>
+      <a href="#">Careers</a>
+      <a href="#">Support</a>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-section">
+      <h3>Services</h3>
+      <a href="#">Web Development</a>
+      <a href="#">App Development</a>
+      <a href="#">SEO</a>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <div class="contact">Phone: 8879887262</div>
+      <a href="#">Social Media</a>
+
+      <div class="social">
+        <span class="media-icons">F</span>
+        <span class="media-icons">T</span>
+        <span class="media-icons">I</span>
+        <span class="media-icons">L</span>
+        <span class="media-icons">Y</span>
       </div>
-      <div class="bottom-details">
-        <!-- your code here -->
-      </div>
-    </footer>
-  </body>
+    </div>
+
+  </div>
+</footer>
+
+</body>
 </html>
